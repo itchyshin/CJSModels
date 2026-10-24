@@ -1,0 +1,5 @@
+Extracted CJS code from /private/tmp/drmtmb-cmr-site-refresh-20261023
+Source commit: b3c2b6f4e29a26dcadf112c8e0f0106247a13221
+Copyright original contributors, including Shinichi Nakagawa. License: GPL (>= 3).
+Dirty Julia CJS refinements preserved; exact source/target SHA-256 hashes in SOURCE-MANIFEST.json.
+Package isolation changes dispatcher, module imports and optional bridge target only.

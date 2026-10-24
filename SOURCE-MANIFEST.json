@@ -1,0 +1,114 @@
+{
+  "source": {
+    "path": "/private/tmp/drmtmb-cmr-site-refresh-20261023",
+    "head": "b3c2b6f4e29a26dcadf112c8e0f0106247a13221",
+    "status": ""
+  },
+  "files": [
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs-methods.R",
+      "source_sha256": "355f78ffe616e509b2d99e15279f17bfca35e7580c85e51dd4af09c7b7c762c4",
+      "target": "CJSModels/R/cjs-methods.R",
+      "target_sha256": "57177fef216f1f6e7aa1679dfc55bd14cfbbbd92d04a7a4c22b534368437454d",
+      "final_target_sha256": "57177fef216f1f6e7aa1679dfc55bd14cfbbbd92d04a7a4c22b534368437454d"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs-selection-inference.R",
+      "source_sha256": "4f6d9601cbf94f731a22a0a4a6ab9ab4e0c62a516b10db98f05da2dba493dbb4",
+      "target": "CJSModels/R/cjs-selection-inference.R",
+      "target_sha256": "44e7adef6116778ac62caf4a2c0fb029c826c46c91ff05a6cf502a3e248db5b7",
+      "final_target_sha256": "44e7adef6116778ac62caf4a2c0fb029c826c46c91ff05a6cf502a3e248db5b7"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs-selection-predict.R",
+      "source_sha256": "43ff09602ca515d22a47e4648504f829e13381baa1e17510961521f05470df4f",
+      "target": "CJSModels/R/cjs-selection-predict.R",
+      "target_sha256": "43ff09602ca515d22a47e4648504f829e13381baa1e17510961521f05470df4f",
+      "final_target_sha256": "43ff09602ca515d22a47e4648504f829e13381baa1e17510961521f05470df4f"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs-shared-predict.R",
+      "source_sha256": "4099f54cb984da573bd0395f737909b977e163725e476553f3a628139c85c11f",
+      "target": "CJSModels/R/cjs-shared-predict.R",
+      "target_sha256": "4099f54cb984da573bd0395f737909b977e163725e476553f3a628139c85c11f",
+      "final_target_sha256": "4099f54cb984da573bd0395f737909b977e163725e476553f3a628139c85c11f"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs-shared-sd.R",
+      "source_sha256": "3429bc3263f75b746f10d17b181c33ae1d93f6f53ee61b144aed95b8da66c557",
+      "target": "CJSModels/R/cjs-shared-sd.R",
+      "target_sha256": "3429bc3263f75b746f10d17b181c33ae1d93f6f53ee61b144aed95b8da66c557",
+      "final_target_sha256": "3429bc3263f75b746f10d17b181c33ae1d93f6f53ee61b144aed95b8da66c557"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs-shared-simulate.R",
+      "source_sha256": "81a163058a6b6110391cb6cb8241ae78ff6b80faed7be32130d548511fd49a5d",
+      "target": "CJSModels/R/cjs-shared-simulate.R",
+      "target_sha256": "81a163058a6b6110391cb6cb8241ae78ff6b80faed7be32130d548511fd49a5d",
+      "final_target_sha256": "81a163058a6b6110391cb6cb8241ae78ff6b80faed7be32130d548511fd49a5d"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cjs.R",
+      "source_sha256": "7e62ec872e12ffd06b3c179a7f1939070ba67e34d89f9e53113be63bf37d67c1",
+      "target": "CJSModels/R/cjs.R",
+      "target_sha256": "2a4d3cb376d70fc9d2fc05b17d39a16d8c94eaf4e2fdfc14effeb7bfe342ef68",
+      "final_target_sha256": "73cc8ca29719469d559a48a67392da8a49616409a882058bde2e7e8c53026d61"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/R/cmr-data.R",
+      "source_sha256": "f8ba8b0d95c7e84055b7babbc2584338a685aba9bafe6246af538992c84de500",
+      "target": "CJSModels/R/cmr-data.R",
+      "target_sha256": "f8ba8b0d95c7e84055b7babbc2584338a685aba9bafe6246af538992c84de500",
+      "final_target_sha256": "b77cc8a38d9019f76b7d556bdf21d887ead8b73032de68e3412573981f16d7b0"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/src/cjs_kernel.hpp",
+      "source_sha256": "b107a62e8a42d6b9de9efdabe592bb0a1bf20334f001917645784b12f7a9b3ed",
+      "target": "CJSModels/src/cjs_kernel.h",
+      "target_sha256": "b107a62e8a42d6b9de9efdabe592bb0a1bf20334f001917645784b12f7a9b3ed",
+      "final_target_sha256": "b107a62e8a42d6b9de9efdabe592bb0a1bf20334f001917645784b12f7a9b3ed"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/tests/testthat/test-cmr-contract.R",
+      "source_sha256": "f387a84689fdd940c2add3e6e8f2eff554d55c9bc381f538d827a56b3277906e",
+      "target": "CJSModels/tests/testthat/test-cmr-contract.R",
+      "target_sha256": "f387a84689fdd940c2add3e6e8f2eff554d55c9bc381f538d827a56b3277906e",
+      "final_target_sha256": "f387a84689fdd940c2add3e6e8f2eff554d55c9bc381f538d827a56b3277906e"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/tests/testthat/test-cmr-exact.R",
+      "source_sha256": "ae500caa4b6b403339f32a699472a6d263b9423b06144d5dac9ccae5f80b622c",
+      "target": "CJSModels/tests/testthat/test-cmr-exact.R",
+      "target_sha256": "c1312a58c9dca2d91bf35dffa5a10a9e472fc9fe2584dcdb4e91acb0aa71d72f",
+      "final_target_sha256": "c1312a58c9dca2d91bf35dffa5a10a9e472fc9fe2584dcdb4e91acb0aa71d72f"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/tests/testthat/test-cmr-methods.R",
+      "source_sha256": "befcc288a0c322d4e2cce95e4761a7de281410547e92cbaa9116f9a4203c6402",
+      "target": "CJSModels/tests/testthat/test-cmr-methods.R",
+      "target_sha256": "9b96d2dc03114551922a12d523679a9320d85b87984060415be5e9af930c03bc",
+      "final_target_sha256": "9b96d2dc03114551922a12d523679a9320d85b87984060415be5e9af930c03bc"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/tests/testthat/fixtures/cmr-exact.tsv",
+      "source_sha256": "512255ac433e469a06f4a7df0cb8514fbcb27f12a15340cbb97f51490c83dca1",
+      "target": "CJSModels/tests/testthat/fixtures/cmr-exact.tsv",
+      "target_sha256": "512255ac433e469a06f4a7df0cb8514fbcb27f12a15340cbb97f51490c83dca1",
+      "final_target_sha256": "512255ac433e469a06f4a7df0cb8514fbcb27f12a15340cbb97f51490c83dca1"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/tests/testthat/fixtures/prediction-m2.csv",
+      "source_sha256": "6792b9e8d56d3e0a5cc9d85d906c7e24537e686ddc6c484389a1abedb9e07749",
+      "target": "CJSModels/tests/testthat/fixtures/prediction-m2.csv",
+      "final_target_sha256": "6792b9e8d56d3e0a5cc9d85d906c7e24537e686ddc6c484389a1abedb9e07749"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "path": "/private/tmp/drmtmb-cmr-site-refresh-20261023/src/drmTMB.cpp",
+      "sha256": "ffa56482f22917f65434c51bab1881a78a7b86269fe277bbbf805448f98ecaec",
+      "extracted_span": "CJS model_type 1000-1003 dispatcher"
+    }
+  ],
+  "ownership": "User explicitly assigned new destination lane; coordinator verified no active CJS extraction conflict. Shared destination leases CJSModels and CJSModels.jl granted to codex:cjs-dedicated-task7."
+}
