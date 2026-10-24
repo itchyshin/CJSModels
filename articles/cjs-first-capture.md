@@ -78,9 +78,9 @@ bootstrap retains every attempt and its status when the original fit
 passes admission; an ineligible original fit can be rejected before an
 interval result is returned. Returned results expose a status for each
 coefficient. These methods have not passed repeated-sample
-interval-availability or coverage qualification. Phase A reports only
-target-specific single-fit endpoint capability and status; Phase B will
-assess repeated-sample availability and calibration. An available
+interval-availability or coverage qualification. The current checks
+report only target-specific single-fit endpoint capability and status;
+repeated-sample availability and calibration remain open. An available
 interval does not establish nominal calibration.
 
 \
