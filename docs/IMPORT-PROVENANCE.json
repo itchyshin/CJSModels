@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-24",
+  "policy": "Archive snapshots are immutable reference material, not qualification of current twins. Parent sources remain intact. GPL R material stays in R only; Julia contains MIT Julia material and extraction-check receipts.",
+  "files": [
+    {
+      "source": "/Users/z3437171/Dropbox/Github Local/CJSModels-project/evidence/FULL-CHECK-ADDENDUM.md",
+      "target": "CJSModels/docs/evidence/FULL-CHECK-ADDENDUM.md",
+      "sha256": "eec6f08f53c1335cf7ee765ad775f9a53c00a61b3ef9cefacbecc84ee57f96f0",
+      "scope": "unchanged extraction checkpoint evidence, not the later cleanup source"
+    },
+    {
+      "source": "/Users/z3437171/Dropbox/Github Local/CJSModels-project/evidence/R-check-full-20261024.log",
+      "target": "CJSModels/docs/evidence/R-check-full-20261024.log",
+      "sha256": "074f5db92256cdc5fc3a7fae3ba87f37104b0536c6bf3d668f4a996cf63471d3",
+      "scope": "unchanged extraction checkpoint evidence, not the later cleanup source"
+    },
+    {
+      "source": "/Users/z3437171/Dropbox/Github Local/CJSModels-project/evidence/two-warning-diagnostics.log",
+      "target": "CJSModels/docs/evidence/two-warning-diagnostics.log",
+      "sha256": "1239b61ff82d90359a4c3d9b26fdc7042b81074b054a9441e55e5200a428961d",
+      "scope": "unchanged extraction checkpoint evidence, not the later cleanup source"
+    },
+    {
+      "source": "/Users/z3437171/Dropbox/Github Local/CJSModels-project/evidence/two-warning-diagnostics.csv",
+      "target": "CJSModels/docs/evidence/two-warning-diagnostics.csv",
+      "sha256": "cdd3646add3797918b79222390910df2a6a4602f4864a4c830d20a7f472a3582",
+      "scope": "unchanged extraction checkpoint evidence, not the later cleanup source"
+    },
+    {
+      "source": "/private/tmp/drmtmb-cmr-site-refresh-20261023/vignettes/cjs-first-capture.Rmd",
+      "target": "CJSModels/docs/archive/cjs-first-capture.Rmd",
+      "sha256": "c57b3d5e3f32b5371d6dc91e84f392e9ad26122903a9bdfd1957f697d7b51c46",
+      "scope": "GPL parent article snapshot; unexecuted historical examples"
+    }
+  ]
+}

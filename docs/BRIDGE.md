@@ -1,16 +1,40 @@
 # Optional fixed-effects bridge
 
-Use Julia >=1.10 and JuliaCall. In a separate bridge Julia environment, develop the standalone CJSModels.jl package and add RCall. Do not add RCall to CJSModels.jl itself.
+Use Julia >=1.10 and the R package JuliaCall. RCall belongs in a separate Julia environment, outside the standalone Julia package dependencies.
 
-Select the bridge environment before Julia initializes, in a fresh R session:
+## Prepare the sibling environment
 
-```r
-Sys.setenv(JULIA_HOME = "/path/to/julia/bin",
-           CJS_JL_PATH = "/path/to/bridge-env")
-library(CJSModels)
-fit <- drm_cjs(data, engine = "julia")
+From the Dropbox coordination folder, run once:
+
+```sh
+cd "/Users/z3437171/Dropbox/Github Local/CJSModels-project"
+JULIA_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 julia --project=bridge-env -e 'using Pkg; Pkg.develop(path="../CJSModels.jl"); Pkg.add("RCall"); Pkg.instantiate()'
 ```
 
-`cjs_julia_setup()` selects JULIA_PROJECT before loading JuliaCall. It does not install Julia. Prepare the bridge environment before use; JuliaCall manages its own RCall setup. Restart R before changing Julia environments.
+If `julia` is absent from PATH, use the local juliaup binary:
+`/Users/z3437171/.julia/juliaup/julia-1.10.12+0.aarch64.apple.darwin14/Julia-1.10.app/Contents/Resources/julia/bin/julia`.
+This creates or updates `CJSModels-project/bridge-env`, with the developed package pointing to `../CJSModels.jl`. A moved checkout must be developed again. The cleanup environment reuses the earlier resolved dependencies and changes only the developed CJSModels path; it does not modify the archive environment.
 
-The bounded 2026-10-24 check compared the R TMB engine with the native Julia matrix bridge on 44 replicated histories. The two coefficient vectors agreed within 1e-5 and log likelihoods within 1e-6 (both approximately -86.99874). This checks one fixed-effects fit. It does NOT cover random-effect bridges, selection bridges, all fitting controls, or inference calibration.
+## Use from a fresh R session
+
+Install the R twin from its canonical source first, then:
+
+```r
+Sys.setenv(
+  JULIA_HOME = "/Users/z3437171/.julia/juliaup/julia-1.10.12+0.aarch64.apple.darwin14/Julia-1.10.app/Contents/Resources/julia/bin",
+  CJS_JL_PATH = "/Users/z3437171/Dropbox/Github Local/CJSModels-project/bridge-env",
+  JULIA_NUM_THREADS = "4", OPENBLAS_NUM_THREADS = "1"
+)
+library(CJSModels)
+cjs_julia_setup()
+y <- rbind(c(1,0,0,0),c(1,0,1,0),c(1,1,0,0),c(1,1,1,0),
+           c(1,0,0,1),c(1,0,1,1),c(1,1,0,1),c(1,1,1,1))
+d <- cmr_data(y, frequency=c(12,4,8,4,4,4,4,4))
+fit <- drm_cjs(d, engine="julia")
+coef(fit)
+logLik(fit)
+```
+
+`cjs_julia_setup()` sets JULIA_PROJECT before initializing JuliaCall and never installs Julia. Changing an environment after initialization can mix dependencies, so restart R. If R changes, rebuild RCall in this separate environment using that R installation.
+
+The earlier 44-history native R/Julia fit agrees within coefficient 1e-5 and loglikelihood 1e-6 tolerances. The cleanup smoke rechecks this example against the sibling package. These checks do NOT cover random-effect or selection bridges, all fitting controls, recovery or interval calibration.

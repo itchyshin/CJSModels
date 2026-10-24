@@ -1,0 +1,32 @@
+destination: site
+url: https://itchyshin.github.io/CJSModels/
+template:
+  bootstrap: 5
+  bootswatch: flatly
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [search, github]
+reference:
+- title: Prepare and fit CJS data
+  contents:
+  - cmr_data
+  - drm_cjs
+- title: Predictions and inference
+  contents:
+  - predict.drm_cjs
+  - simulate.drm_cjs
+  - coef.drm_cjs
+  - logLik.drm_cjs
+  - vcov.drm_cjs
+  - confint.drm_cjs
+- title: Optional Julia bridge
+  contents:
+  - cjs_julia_setup
+- title: Package
+  contents:
+  - '`CJSModels-package`'
+articles:
+- title: Worked examples
+  contents:
+  - '`articles/cjs-first-capture`'

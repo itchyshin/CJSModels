@@ -53,7 +53,7 @@ or occasion, not at each individual's administrative endpoint.}
 \code{list(phi = ..., p = ...)}. The fitted coding is retained for prediction and
 bootstrap refits.}
 
-\item{engine}{Computational engine: native TMB or native DRModels.jl. The
+\item{engine}{Computational engine: native TMB or native CJSModels.jl. The
 Julia bridge currently admits fixed-effects CJS only.}
 }
 \value{

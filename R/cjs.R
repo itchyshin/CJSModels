@@ -24,7 +24,7 @@
 #'   individual survival or detection effect. Predictors must be constant
 #'   within individual.
 #' @param control Options passed to [stats::nlminb()].
-#' @param engine Computational engine: native TMB or native DRModels.jl. The
+#' @param engine Computational engine: native TMB or native CJSModels.jl. The
 #'   Julia bridge currently admits fixed-effects CJS only.
 #' @return A `drm_cjs` fit containing the optimizer and TMB objective.
 #'   Individual-effect fits also report quadrature refinement status and an
@@ -230,7 +230,7 @@ drm_cjs <- function(data, phi = ~1, p = ~1, phi_data = NULL, p_data = NULL,
     names(result$gradient) <- fixed_names
     opt <- list(par = result$beta, objective = result$objective,
                 convergence = if (result$converged) 0L else 1L,
-                message = "DRModels.jl fixed-effects CJS optimizer",
+                message = "CJSModels.jl fixed-effects CJS optimizer",
                 iterations = result$iterations)
     return(structure(list(data = data, logLik = result$loglik,
       objective = result$loglik, training_phi_data = phi_frame,

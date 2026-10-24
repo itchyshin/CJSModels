@@ -2,3 +2,7 @@
 ^docs$
 ^README\.md$
 ^VALIDATION_LEDGER\.md$
+^_pkgdown\.yml$
+^index\.md$
+^vignettes$
+^site$
