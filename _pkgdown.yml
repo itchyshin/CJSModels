@@ -30,3 +30,4 @@ articles:
 - title: Worked examples
   contents:
   - '`articles/cjs-first-capture`'
+  - '`articles/tested-scope`'

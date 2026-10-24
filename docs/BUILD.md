@@ -9,4 +9,4 @@ Rscript -e 'pkgdown::check_pkgdown(); pkgdown::build_site(new_process=FALSE, ins
 
 The output goes to `site/`, which is ignored by Git and excluded from the package archive. Reader articles under `vignettes/articles` are website content and are excluded from the installed package. The archived parent article and diagnostic logs under docs are not published by this build.
 
-The configured GitHub Pages URL is a planned deployment target, not evidence of a live site. The verified static bundle is published from `gh-pages` using GitHub Pages. No custom deployment workflow is installed. Review and explicit publication authorization are required before pushing or publishing. Public documentation scope does not authorize changing the private repository visibility.
+The configured GitHub Pages URL is the deployment target; verify live pages after publication. The verified static bundle is published from `gh-pages` using GitHub Pages. No custom deployment workflow is installed. Review and explicit publication authorization are required before pushing or publishing. Both existing repositories were made public with explicit user approval.
